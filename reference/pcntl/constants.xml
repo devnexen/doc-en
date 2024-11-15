@@ -570,7 +570,7 @@
     </simpara>
    </listitem>
   </varlistentry>
-  <varlistentry xml:id="constant.sigckpt">
+  <varlistentry xml:id="constant.sigckptexit">
    <term>
     <constant>SIGCKPTEXIT</constant>
     (<type>int</type>)
