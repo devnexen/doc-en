@@ -566,7 +566,7 @@
    <listitem>
     <simpara>
      Generates/restores a checkpoint.
-     Available from PHP 8.4.0 (DragonFlyBSD only).
+     Available as of PHP 8.4.0 (DragonFlyBSD only).
     </simpara>
    </listitem>
   </varlistentry>
@@ -578,7 +578,7 @@
    <listitem>
     <simpara>
      Generates/restores a checkpoint and exit.
-     Available from PHP 8.4.0 (DragonFlyBSD only).
+     Available as of PHP 8.4.0 (DragonFlyBSD only).
     </simpara>
    </listitem>
   </varlistentry>
@@ -1522,6 +1522,57 @@
    <listitem>
     <simpara>
      Too many users
+    </simpara>
+   </listitem>
+  </varlistentry>
+ </variablelist>
+ <variablelist xml:id="constant.pcntl-qosclass.constants" role="constant_list">
+  <title>QosClass constants</title>
+  <varlistentry xml:id="constant.background">
+   <term>
+    <constant>Pcntl::Background</constant>
+    (<type>enum</type>)
+   </term>
+   <listitem>
+    <simpara>
+     Runs the process after all high-priority ones had ran their courses.
+     Available as of PHP 8.4.0 (macOs only).
+    </simpara>
+   </listitem>
+  </varlistentry>
+  <varlistentry xml:id="constant.default">
+   <term>
+    <constant>Pcntl::Default</constant>
+    (<type>enum</type>)
+   </term>
+   <listitem>
+    <simpara>
+     Runs the process after all high-priority processes but before the low-priority ones.
+     Available as of PHP 8.4.0 (macOs only).
+    </simpara>
+   </listitem>
+  </varlistentry>
+  <varlistentry xml:id="constant.user-interactive">
+   <term>
+    <constant>Pcntl::UserInteractive</constant>
+    (<type>enum</type>)
+   </term>
+   <listitem>
+    <simpara>
+     Runs the process as the highest priority level.
+     Available as of PHP 8.4.0 (macOs only).
+    </simpara>
+   </listitem>
+  </varlistentry>
+  <varlistentry xml:id="constant.user-initiated">
+   <term>
+    <constant>Pcntl::UserInitiated</constant>
+    (<type>enum</type>)
+   </term>
+   <listitem>
+    <simpara>
+     Runs the process at high priority level but below Pcntl::UserInteractive ones.
+     Available as of PHP 8.4.0 (macOs only).
     </simpara>
    </listitem>
   </varlistentry>
